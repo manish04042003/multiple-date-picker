@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    		<!-- loads some utilities (not needed for your developments) -->
+	<link rel="stylesheet" type="text/css" href="css/mdp.css">
+	<link rel="stylesheet" type="text/css" href="css/prettify.css">
+
+    <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.11.1.js"></script>
+
+	<script type="text/javascript" src="js/jquery-ui.multidatespicker.js"></script>
+
+</head>
+<body>
+    <div id="mdp-demo"></div>
+
+
+<div id="getdate">Get Date</div>
+
+<script>
+    $('#mdp-demo').multiDatesPicker({
+        dateFormat: "y-m-d",
+    });
+
+$("#getdate").click(function (){
+var dates = $('#mdp-demo').multiDatesPicker('getDates');
+console.log(dates)
+})
+
+</script>
+    
+</body>
+</html>
